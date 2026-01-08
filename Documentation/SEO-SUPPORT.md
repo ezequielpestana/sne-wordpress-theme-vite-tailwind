@@ -151,20 +151,11 @@ Quando algum plugin é detectado, as funções nativas do tema são desativadas 
 </article>
 ```
 
-## 🚀 Melhorias Futuras Possíveis
-
-1. **FAQ Schema** - Para páginas de perguntas frequentes
-2. **Product Schema** - Se adicionar WooCommerce
-3. **Review Schema** - Para avaliações
-4. **Local Business Schema** - Para negócios locais
-5. **Video Schema** - Para conteúdo em vídeo
-
 ## 📝 Notas Importantes
 
 1. **Sem Conflitos**: O tema foi projetado para NÃO conflitar com plugins SEO
-2. **Fallback Inteligente**: Se nenhum plugin estiver ativo, o tema fornece recursos SEO básicos
-3. **Performance**: As verificações são leves e não impactam performance
-4. **Padrões Web**: Segue os padrões do Schema.org e Open Graph Protocol
+2. **Performance**: As verificações são leves e não impactam performance
+3. **Padrões Web**: Segue os padrões do Schema.org e Open Graph Protocol
 
 ## 🔧 Personalização
 
@@ -204,16 +195,6 @@ Edite a função `sne_tema_custom_breadcrumbs()` em `functions.php` para alterar
 - [x] Meta tags de imagem
 - [x] Article metadata (published/modified time)
 - [x] Title tag otimizado
-
-## 🧪 Como Testar
-
-1. **Google Rich Results Test**: https://search.google.com/test/rich-results
-2. **Facebook Sharing Debugger**: https://developers.facebook.com/tools/debug/
-3. **Twitter Card Validator**: https://cards-dev.twitter.com/validator
-4. **Schema.org Validator**: https://validator.schema.org/
-
-Teste uma URL do seu site nessas ferramentas para validar a implementação!
-
 ---
 
 **Última atualização:** Janeiro 2026  
