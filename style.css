@@ -1,0 +1,22 @@
+/*
+Theme Name: SNE Tema
+Theme URI: https://seunegocioeficiente.com
+Author: SNE
+Author URI: https://seunegocioeficiente.com
+Description: Tema WordPress pré-configurado com Vite e Tailwind CSS para acelerar o desenvolvimento de sites institucionais, portfólios e blogs.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: sne-tema
+Tags: blog, portfolio, one-column, two-columns, custom-colors, custom-logo, custom-menu, editor-style, featured-images, flexible-header, threaded-comments, translation-ready
+
+SNE Tema é um tema moderno e flexível, desenvolvido com as melhores práticas e tecnologias atuais.
+*/
+
+/* 
+Este arquivo style.css é necessário para o WordPress reconhecer o tema.
+Os estilos CSS são compilados pelo Vite a partir de assets/src/css/main.css
+*/

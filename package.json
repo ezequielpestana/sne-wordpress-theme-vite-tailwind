@@ -1,0 +1,26 @@
+{
+  "name": "sne-tema",
+  "version": "1.0.0",
+  "description": "Tema WordPress pré-configurado com Vite e Tailwind CSS para desenvolvimento rápido de sites institucionais, portfólios e blogs.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "vite": "^7.3.0",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-live-reload": "^3.0.5"
+  },
+  "dependencies": {
+    "alpinejs": "^3.15.3"
+  }
+}

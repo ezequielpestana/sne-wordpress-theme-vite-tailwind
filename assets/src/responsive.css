@@ -1,0 +1,147 @@
+/* ====================================
+   RESPONSIVIDADE - TELAS PEQUENAS
+   ==================================== */
+
+/* Dispositivos extra pequenos (250px - 330px) */
+@media (max-width: 330px) {
+    /* Ajustar títulos gerais */
+    h1 {
+        font-size: 1.75rem !important; /* 28px */
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.5rem !important; /* 24px */
+        line-height: 1.3;
+    }
+
+    h3 {
+        font-size: 1.25rem !important; /* 20px */
+        line-height: 1.3;
+    }
+
+    h4 {
+        font-size: 1.125rem !important; /* 18px */
+        line-height: 1.4;
+    }
+
+    h5, h6 {
+        font-size: 1rem !important; /* 16px */
+        line-height: 1.4;
+    }
+
+    /* Ajustar texto base */
+    body {
+        font-size: 14px;
+    }
+
+    /* Ajustar padding dos containers */
+    .container {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+
+    /* Ajustar botões */
+    button, 
+    .btn, 
+    a[class*="btn"],
+    input[type="submit"],
+    .wp-block-button__link {
+        font-size: 0.875rem !important;
+        padding: 0.5rem 1rem !important;
+    }
+
+    /* Ajustar espaçamentos */
+    section,
+    .py-20 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+
+    .py-12 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    /* Ajustar cards e boxes */
+    .rounded-2xl {
+        border-radius: 1rem !important;
+    }
+
+    .p-10 {
+        padding: 1.5rem !important;
+    }
+
+    .p-8 {
+        padding: 1.25rem !important;
+    }
+
+    .p-6 {
+        padding: 1rem !important;
+    }
+
+    /* Ajustar gaps */
+    .gap-8 {
+        gap: 1rem !important;
+    }
+
+    .gap-6 {
+        gap: 0.75rem !important;
+    }
+
+    /* Ajustar textos grandes */
+    .text-6xl,
+    .text-5xl {
+        font-size: 2rem !important; /* 32px */
+    }
+
+    .text-4xl {
+        font-size: 1.75rem !important; /* 28px */
+    }
+
+    .text-3xl {
+        font-size: 1.5rem !important; /* 24px */
+    }
+
+    .text-2xl {
+        font-size: 1.25rem !important; /* 20px */
+    }
+
+    .text-xl {
+        font-size: 1.125rem !important; /* 18px */
+    }
+
+    /* Ajustar imagens */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Dispositivos pequenos (331px - 480px) */
+@media (min-width: 331px) and (max-width: 480px) {
+    h1 {
+        font-size: 2rem !important; /* 32px */
+    }
+
+    h2 {
+        font-size: 1.75rem !important; /* 28px */
+    }
+
+    h3 {
+        font-size: 1.5rem !important; /* 24px */
+    }
+
+    .text-6xl,
+    .text-5xl {
+        font-size: 2.25rem !important; /* 36px */
+    }
+
+    .text-4xl {
+        font-size: 2rem !important; /* 32px */
+    }
+
+    .text-3xl {
+        font-size: 1.75rem !important; /* 28px */
+    }
+}

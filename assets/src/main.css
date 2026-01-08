@@ -1,0 +1,228 @@
+@import "tailwindcss";
+@import "./content-styles.css";
+@import "./responsive.css";
+
+@theme {
+  /* ====================================
+     SISTEMA DE CORES PERSONALIZÁVEL
+     ====================================
+     Altere as cores abaixo para adaptar o tema à identidade visual do seu projeto.
+     
+     color-1: Cor primária principal (padrão: branco #ffffff)
+     color-2: Cor secundária/texto principal (padrão: preto #000000)
+     color-3: Cor de destaque/hover (padrão: cinza escuro #4a5568)
+     color-4: Cor de acento 1 (padrão: laranja #ed8936)
+     color-5: Cor de acento 2 (padrão: verde #48bb78)
+  */
+  --color-color-1: #ffffff; /* Cor Primaria - Cor de fundo do site */
+  --color-color-2: #001B44; /* Cor Secundaria - Usada nos textos em contraste com o fundo */
+  --color-color-3: #003078; /* color 3 é  usado como hover da color 2 - hover texto*/
+  --color-color-4: #e3e3e3; /*  hover botões... cor entre a 3 e a 2*/
+  --color-color-5: #FFAA00; /* Cor terciaria */
+
+  
+  /* Cores secondary */
+  --color-secondary: #10b981;
+  --color-secondary-light: #6ee7b7;
+  --color-secondary-dark: #047857;
+}
+
+/* Estilos personalizados do tema */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Prevenir overflow de conteúdo */
+h1, h2, h3, h4, h5, h6, p, div, span {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Layout sticky footer - garante que o footer fique no final da página */
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#primary {
+    flex: 1 0 auto;
+}
+/* Estilos para contact form */
+
+.wpcf7 input,
+.wpcf7 textarea,
+.wpcf7 select {
+  width: 100%;
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-color: rgba(0,27,68,0.2) !important;
+  padding: 12px 14px !important;
+  border-radius: 8px !important;
+  box-sizing: border-box !important;
+  font-size: 16px !important;
+}
+
+.wpcf7 input[type=submit]{
+  width: 100%;
+  border-width: 2px !important;
+  background-color: #FFAA00; 
+  border-style: solid !important;
+  border-color: rgba(0,27,68,0.2) !important;
+  padding: 12px 14px !important;
+  border-radius: 8px !important;
+  box-sizing: border-box !important;
+  color: white !important;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  padding-left: 40px !important;
+}
+
+.wpcf7 input[type=submit]::before {
+  content: "\f1d8";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: white;
+}
+
+.wpcf7 input:focus,
+.wpcf7 textarea:focus,
+.wpcf7 select:focus {
+  width: 100%;
+  border-color: #FFAA00 !important;
+  outline: none !important;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .wpcf7 input,
+  .wpcf7 textarea,
+  .wpcf7 select {
+    padding: 10px 12px !important;
+    font-size: 14px !important;
+  }
+  
+  .wpcf7 input[type=submit] {
+    padding: 10px 12px !important;
+    padding-left: 36px !important;
+    font-size: 16px;
+  }
+  
+  .wpcf7 input[type=submit]::before {
+    left: 12px;
+    font-size: 14px;
+  }
+  
+  .wpcf7 textarea {
+    min-height: 120px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .wpcf7 input,
+  .wpcf7 textarea,
+  .wpcf7 select {
+    padding: 8px 10px !important;
+    font-size: 14px !important;
+  }
+  
+  .wpcf7 input[type=submit] {
+    padding: 10px 10px !important;
+    padding-left: 34px !important;
+    font-size: 15px;
+  }
+  
+  .wpcf7 input[type=submit]::before {
+    left: 10px;
+    font-size: 13px;
+  }
+}
+
+
+
+/* Estilos do menu mobile com Alpine.js */
+.menu-mobile {
+    position: fixed;
+    top: 80px; /* Valor inicial - será ajustado por JS quando admin bar estiver presente */
+    left: 0;
+    width: 100%;
+    background: var(--color-color-1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 40;
+    transition: top 0.3s ease;
+}
+
+/* Links do menu mobile */
+.menu-mobile a {
+    display: block;
+    padding: 0.75rem 0;
+    color: var(--color-neutral-700);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.menu-mobile a:hover {
+    color: var(--color-color-3);
+}
+
+/* Animação do ícone do menu */
+.menu-toggle i {
+    transition: transform 0.3s ease;
+}
+
+/* Garantir que o x-show funcione corretamente */
+[x-cloak] {
+    display: none !important;
+}
+/* Estilos para widgets da sidebar */
+.widget-area .widget {
+    background-color: var(--color-color-1);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.widget-area .widget-title {
+    color: var(--color-color-2);
+}
+
+/* Estilos para o widget de pesquisa */
+.widget_search label,
+.widget_search h3,
+.widget .search-form label {
+    color: var(--color-color-2) !important;
+}
+
+/* Estilos para lista de posts recentes e coment�rios */
+.widget ul li,
+.widget ol li {
+    color: var(--color-color-2);
+}
+
+.widget a {
+    color: var(--color-color-2);
+    transition: opacity 0.2s ease;
+}
+
+.widget a:hover {
+    opacity: 0.7;
+}
