@@ -48,10 +48,6 @@ get_header();
                                     <?php echo esc_html(get_the_date()); ?>
                                 </time>
                                 <meta itemprop="dateModified" content="<?php echo esc_attr(get_the_modified_date('c')); ?>">
-                                <?php if (has_category()) : ?>
-                                    <span class="separator mx-2">•</span>
-                                    <span itemprop="articleSection"><?php the_category(', '); ?></span>
-                                <?php endif; ?>
                                 <span class="separator mx-2">•</span>
                                 <span class="author vcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
                                     <?php esc_html_e('Por', 'sne-tema'); ?> <span itemprop="name"><?php the_author(); ?></span>
