@@ -105,11 +105,4 @@ if (!defined('ABSPATH')) {
         </div>
     </header><!-- #masthead -->
 
-    <?php 
-    // Breadcrumbs - compatível com plugins SEO
-    if (!is_front_page() && !is_home()) {
-        sne_tema_breadcrumbs();
-    }
-    ?>
-
     <main id="primary" class="site-main" style="margin-top: <?php echo esc_attr(get_theme_mod('header_height', '80')); ?>px;">

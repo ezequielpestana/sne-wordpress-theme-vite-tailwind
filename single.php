@@ -54,7 +54,7 @@ get_header();
                                 </span>
                             </div>
 
-                            <?php the_title('<h1 class="entry-title text-4xl font-bold text-color-2 mb-4" itemprop="headline">', '</h1>'); ?>
+                            <?php the_title('<h1 class="entry-title mt-3 text-4xl font-bold text-color-2 mb-4" itemprop="headline">', '</h1>'); ?>
                             
                             <!-- Schema.org metadata oculto -->
                             <meta itemprop="mainEntityOfPage" content="<?php the_permalink(); ?>">
